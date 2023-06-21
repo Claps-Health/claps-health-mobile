@@ -1,0 +1,112 @@
+PODS:
+  - Base58Swift (2.1.10):
+    - BigInt (~> 5.0.0)
+  - BigInt (5.0.0)
+  - Bip39.swift (0.1.1):
+    - UncommonCrypto (~> 0.1.0)
+  - Blake2 (0.1.2)
+  - CommonSwift (1.0.0):
+    - BigInt (~> 5.0.0)
+  - CryptoSwift (1.7.0)
+  - ed25519swift (1.2.8):
+    - CryptoSwift
+  - EncryptingSwift (1.0.0):
+    - Bip39.swift (~> 0.1.1)
+    - CommonSwift (~> 1.0.0)
+    - ed25519swift (~> 1.2.8)
+    - HashingSwift (~> 1.0.0)
+    - secp256k1.swift (~> 0.1.4)
+    - Sr25519 (~> 0.1.3)
+    - UncommonCrypto (~> 0.1.3)
+  - Flutter (1.0.0)
+  - HashingSwift (1.0.0):
+    - Base58Swift (~> 2.1.10)
+    - Blake2 (~> 0.1.2)
+    - CommonSwift (~> 1.0.0)
+    - keccak.c (~> 0.1.3)
+    - xxHash-Swift (~> 1.1.1)
+  - keccak.c (0.1.3)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - secp256k1.swift (0.1.4)
+  - share_plus (0.0.1):
+    - Flutter
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - Sr25519 (0.1.3):
+    - Sr25519/Sr25519 (= 0.1.3)
+  - Sr25519/CSr25519 (0.1.3):
+    - UncommonCrypto (~> 0.1.0)
+  - Sr25519/Helpers (0.1.3):
+    - Sr25519/CSr25519
+  - Sr25519/Sr25519 (0.1.3):
+    - Sr25519/CSr25519
+    - Sr25519/Helpers
+  - UncommonCrypto (0.1.3)
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - xxHash-Swift (1.1.1)
+
+DEPENDENCIES:
+  - EncryptingSwift
+  - Flutter (from `Flutter`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/ios`)
+  - share_plus (from `.symlinks/plugins/share_plus/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Base58Swift
+    - BigInt
+    - Bip39.swift
+    - Blake2
+    - CommonSwift
+    - CryptoSwift
+    - ed25519swift
+    - EncryptingSwift
+    - HashingSwift
+    - keccak.c
+    - secp256k1.swift
+    - Sr25519
+    - UncommonCrypto
+    - xxHash-Swift
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/ios"
+  share_plus:
+    :path: ".symlinks/plugins/share_plus/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+
+SPEC CHECKSUMS:
+  Base58Swift: 53d551f0b33d9478fa63b3445e453a772d6b31a7
+  BigInt: 74b4d88367b0e819d9f77393549226d36faeb0d8
+  Bip39.swift: b1d6bf4084659232e711b3d3e4bf7df666f39974
+  Blake2: f33072b13349da1b8048a2bf26a3a24d4eac6dcc
+  CommonSwift: 65c577c1b0ce5f9063ecbddff2bfeef4f279de61
+  CryptoSwift: e71dbe5bbb7a945e365d4b9034dbccf28d033a8f
+  ed25519swift: 32845b4d73fdd3598d6334972a62f463314de730
+  EncryptingSwift: 30241d07e0c2e7dd14dde76af58cce22f82dd9f9
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  HashingSwift: 172f4159423146bd58cabbc266a22b5e75115cb3
+  keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
+  path_provider_foundation: c68054786f1b4f3343858c1e1d0caaded73f0be9
+  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  share_plus: 599aa54e4ea31d4b4c0e9c911bcc26c55e791028
+  shared_preferences_foundation: 986fc17f3d3251412d18b0265f9c64113a8c2472
+  Sr25519: 87a974e2d714113af55e1d7e5cef1b82864a57bd
+  UncommonCrypto: 8e6276bd3def28cdbd55966926c38c37ea1c9af5
+  url_launcher_ios: 08a3dfac5fb39e8759aeb0abbd5d9480f30fc8b4
+  xxHash-Swift: 13ebcbfc48658a5acf3777751e64b18c0f110d25
+
+PODFILE CHECKSUM: dfff2212d67314b8448c41801c697be37f152f7e
+
+COCOAPODS: 1.12.1
