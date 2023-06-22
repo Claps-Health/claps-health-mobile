@@ -16,7 +16,7 @@ class InfoItemRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return <Widget>[
       Text(itemTitle, style: AppTextStyles.inputTitle),
-      const SizedBox(width: Constants.defaultSpaceSize * 2),
+      const Spacer(),
       mainElevatedButton(onPressed: pressCallback, text: buttonText).width(250),
     ].toRow(
       mainAxisAlignment: MainAxisAlignment.start,

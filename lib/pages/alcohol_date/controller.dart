@@ -1,4 +1,5 @@
 import 'package:app/common/index.dart';
+import 'package:collection/collection.dart';
 import 'package:get/get.dart';
 
 class AlcoholDateController extends GetxController {
@@ -18,21 +19,23 @@ class AlcoholDateController extends GetxController {
   void onSubmitTap() {
     Map<String, double> alcoholReduceAmount =
         Get.arguments as Map<String, double>;
-    for (MapEntry<String, double> element in alcoholReduceAmount.entries) {
+
+    alcoholReduceAmount.entries.forEachIndexed((index, element) {
       if (element.value > 0.0) {
         IsarService.to.writeAlcoholRecord(
           AlcoholRecord(
             alcoholType: AlcoholType.values.byName(element.key),
             amount: element.value,
-            savedTime: chosenDateTime.millisecondsSinceEpoch,
+            savedTime: chosenDateTime.millisecondsSinceEpoch + index,
           ),
         );
         handleAlcoholRecordApiUpdate(
             AlcoholType.values.byName(element.key),
             element.value,
-            chosenDateTime.millisecondsSinceEpoch);
+            chosenDateTime.millisecondsSinceEpoch + index);
       }
-    }
+    });
+
     isSubmitVisible.value = false;
     showRecordSuccessPopup();
   }
